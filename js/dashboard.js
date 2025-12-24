@@ -41,11 +41,11 @@ function startQuiz() {
 async function loadHistory() {
     try {
         // Fetch all quiz history from JSON-server
-        const resHistory = await fetch("http://localhost:3000/quizHistory");
+        const resHistory = await fetch("https://online-quiz-platform-gjin.onrender.com/quizHistory");
         const history = await resHistory.json();
 
         // Fetch all users from JSON-server
-        const resUsers = await fetch("http://localhost:3000/users");
+        const resUsers = await fetch("https://online-quiz-platform-gjin.onrender.com/users");
         const allUsers = await resUsers.json();
         const validUsernames = allUsers.map(u => u.username);
 
@@ -99,3 +99,4 @@ async function loadHistory() {
 
 // Load history and leaderboard on page load
 loadHistory();
+
