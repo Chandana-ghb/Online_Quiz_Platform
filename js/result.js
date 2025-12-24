@@ -9,7 +9,7 @@ const certBtn = document.getElementById("certificateBtn");
 
 async function loadResult() {
     try {
-        const res = await fetch(`http://localhost:3000/quizHistory?username=${user.username}`);
+        const res = await fetch(`https://online-quiz-platform-gjin.onrender.com/quizHistory?username=${user.username}`);
         const history = await res.json();
 
         if (!history || history.length === 0) {
@@ -62,3 +62,4 @@ function openCertificate() { window.location.href = "certificate.html"; }
 
 // Load result
 loadResult();
+
