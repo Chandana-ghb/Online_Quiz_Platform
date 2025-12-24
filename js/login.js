@@ -9,7 +9,7 @@ async function login() {
   }
 
   try {
-    const res = await fetch(`http://localhost:3000/users?email=${email}`);
+    const res = await fetch(`https://online-quiz-platform-gjin.onrender.com/users?email=${email}`);
     const users = await res.json();
 
     if (users.length === 0) {
@@ -42,3 +42,4 @@ async function login() {
     errorEl.textContent = "Login failed";
   }
 }
+
