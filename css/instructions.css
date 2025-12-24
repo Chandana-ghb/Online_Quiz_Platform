@@ -1,0 +1,137 @@
+
+/* =========================
+   ROOT COLORS (LIGHT THEME)
+========================= */
+:root {
+    --bg-main: #f5f7fb;          /* light lavender */
+    --card-bg: #ffffff;
+    --primary: #6c63ff;          /* soft violet */
+    --secondary: #4dabf7;        /* sky blue */
+    --success: #2ecc71;
+    --danger: #ff6b6b;
+    --text-main: #2d3436;
+    --text-light: #636e72;
+    --border-light: #e0e0e0;
+}
+/* =========================
+   BASE & RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff9e6;
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+.instructions-card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructions-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   HEADER
+========================= */
+.instructions-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: var(--primary);
+}
+
+/* =========================
+   LIST
+========================= */
+.instructions-card ul {
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.instructions-card ul li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+}
+
+.instructions-card ul li strong {
+    color: var(--text-main);
+}
+
+/* Add small icon bullet for a modern look */
+.instructions-card ul li::before {
+    content: "•";
+    color: var(--secondary);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-primary {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .instructions-card {
+        padding: 30px 20px;
+    }
+
+    .instructions-card h1 {
+        font-size: 1.5rem;
+    }
+
+    .instructions-card ul li {
+        font-size: 0.95rem;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}

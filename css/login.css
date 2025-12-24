@@ -1,0 +1,208 @@
+/* ===============================
+   GLOBAL STYLES
+================================ */
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* smooth transitions */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/sign_login.jpg') no-repeat center center/cover;
+  background-size: cover;
+  overflow: hidden;
+  animation: fadeInBody 1s ease forwards;
+  position: relative;
+  filter: brightness(1.05) contrast(1.1); /* enhance clarity */
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.35); /* reduced overlay for clarity */
+  z-index: 0;
+}
+
+/* ===============================
+   LOGIN CARD
+================================ */
+.login-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 380px;
+  animation: slideUp 0.8s ease forwards; /* slide up effect */
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.08); /* glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,0,0,0.3);
+  color: #fff;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.login-card h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* ===============================
+   INPUTS WITH ICONS
+================================ */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+.input-group:nth-child(1) { animation-delay: 0.7s; }
+.input-group:nth-child(2) { animation-delay: 0.9s; }
+
+.input-group input {
+  width: 100%;
+  padding: 14px 40px 14px 14px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-group input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.input-group input:focus {
+  outline: none;
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 0 12px rgba(255,255,255,0.3);
+}
+
+.input-group i {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.7);
+  transition: color 0.3s ease;
+}
+
+.input-group input:focus + i {
+  color: #16C47F;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: #16C47F;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 1.1s;
+}
+
+button:hover {
+  background: #FF9D23;
+  box-shadow: 0 0 15px #FF9D23;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   ERROR & LINK
+================================ */
+#error {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #F93827;
+}
+
+.link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.link a {
+  color: #16C47F;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #FFD65A;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 12px 12px 12px 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+@keyframes fadeInBody {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

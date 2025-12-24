@@ -1,0 +1,2418 @@
+{
+  "questions": [
+    {
+      "question": "Which tag is used to define a list with numbers?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "answer": "<ol>",
+      "category": "HTML",
+      "difficulty": "easy",
+      "id": "0081"
+    },
+    {
+      "id": "0082",
+      "question": "Which tag is used to define a header for a document or section?",
+      "options": [
+        "<header>",
+        "<head>",
+        "<hgroup>",
+        "<section>"
+      ],
+      "answer": "<header>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0083",
+      "question": "Which HTML element is used to define emphasized text?",
+      "options": [
+        "<em>",
+        "<i>",
+        "<strong>",
+        "<b>"
+      ],
+      "answer": "<em>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0084",
+      "question": "Which tag is used to define the main content of a document?",
+      "options": [
+        "<main>",
+        "<body>",
+        "<content>",
+        "<section>"
+      ],
+      "answer": "<main>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0085",
+      "question": "Which attribute specifies alternative text for an image?",
+      "options": [
+        "alt",
+        "title",
+        "src",
+        "text"
+      ],
+      "answer": "alt",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0086",
+      "question": "Which tag is used to define a footer for a document or section?",
+      "options": [
+        "<footer>",
+        "<bottom>",
+        "<foot>",
+        "<section>"
+      ],
+      "answer": "<footer>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0087",
+      "question": "Which tag is used to create a dropdown list?",
+      "options": [
+        "<select>",
+        "<input>",
+        "<option>",
+        "<dropdown>"
+      ],
+      "answer": "<select>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0088",
+      "question": "Which tag defines a section in a document?",
+      "options": [
+        "<section>",
+        "<div>",
+        "<article>",
+        "<span>"
+      ],
+      "answer": "<section>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0089",
+      "question": "Which tag is used to group related elements in a form?",
+      "options": [
+        "<fieldset>",
+        "<form>",
+        "<group>",
+        "<section>"
+      ],
+      "answer": "<fieldset>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0090",
+      "question": "Which tag is used to create a caption for a table?",
+      "options": [
+        "<caption>",
+        "<title>",
+        "<thead>",
+        "<tfoot>"
+      ],
+      "answer": "<caption>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0091",
+      "question": "Which tag is used to define a blockquote?",
+      "options": [
+        "<blockquote>",
+        "<quote>",
+        "<q>",
+        "<bq>"
+      ],
+      "answer": "<blockquote>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0092",
+      "question": "Which tag is used to define a horizontal line?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<br>",
+        "<hl>"
+      ],
+      "answer": "<hr>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0093",
+      "question": "Which tag is used to define a highlighted text?",
+      "options": [
+        "<mark>",
+        "<highlight>",
+        "<em>",
+        "<b>"
+      ],
+      "answer": "<mark>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0094",
+      "question": "Which tag is used to define a smaller text?",
+      "options": [
+        "<small>",
+        "<sub>",
+        "<sup>",
+        "<tiny>"
+      ],
+      "answer": "<small>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0095",
+      "question": "Which tag is used to create a definition list?",
+      "options": [
+        "<dl>",
+        "<ul>",
+        "<ol>",
+        "<list>"
+      ],
+      "answer": "<dl>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0096",
+      "question": "Which tag is used to define a term in a definition list?",
+      "options": [
+        "<dt>",
+        "<dd>",
+        "<li>",
+        "<term>"
+      ],
+      "answer": "<dt>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0097",
+      "question": "Which tag is used to define the description of a term in a list?",
+      "options": [
+        "<dd>",
+        "<dt>",
+        "<li>",
+        "<desc>"
+      ],
+      "answer": "<dd>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0098",
+      "question": "Which tag is used to define keyboard input?",
+      "options": [
+        "<kbd>",
+        "<input>",
+        "<key>",
+        "<type>"
+      ],
+      "answer": "<kbd>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0099",
+      "question": "Which tag is used to define preformatted text?",
+      "options": [
+        "<pre>",
+        "<code>",
+        "<text>",
+        "<format>"
+      ],
+      "answer": "<pre>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0100",
+      "question": "Which tag is used to define inserted text?",
+      "options": [
+        "<ins>",
+        "<del>",
+        "<add>",
+        "<insert>"
+      ],
+      "answer": "<ins>",
+      "category": "HTML",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0101",
+      "question": "Which attribute is used to specify that an input field must be filled out?",
+      "options": [
+        "required",
+        "validate",
+        "placeholder",
+        "checked"
+      ],
+      "answer": "required",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0102",
+      "question": "Which tag is used to embed a video in HTML?",
+      "options": [
+        "<video>",
+        "<media>",
+        "<movie>",
+        "<embed>"
+      ],
+      "answer": "<video>",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0103",
+      "question": "Which attribute is used to control the playback of video/audio automatically?",
+      "options": [
+        "autoplay",
+        "play",
+        "start",
+        "loop"
+      ],
+      "answer": "autoplay",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0104",
+      "question": "Which tag is used to define multiple columns in a table?",
+      "options": [
+        "<colgroup>",
+        "<columns>",
+        "<table>",
+        "<tr>"
+      ],
+      "answer": "<colgroup>",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0105",
+      "question": "Which HTML element is used to specify a client-side script?",
+      "options": [
+        "<script>",
+        "<js>",
+        "<code>",
+        "<scripting>"
+      ],
+      "answer": "<script>",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0106",
+      "question": "Which attribute specifies the URL of an external script file?",
+      "options": [
+        "src",
+        "href",
+        "link",
+        "file"
+      ],
+      "answer": "src",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0107",
+      "question": "Which HTML tag is used to define the title of a document shown in the browser tab?",
+      "options": [
+        "<title>",
+        "<head>",
+        "<meta>",
+        "<h1>"
+      ],
+      "answer": "<title>",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0108",
+      "question": "Which attribute is used to open a link in a new tab?",
+      "options": [
+        "target",
+        "rel",
+        "href",
+        "link"
+      ],
+      "answer": "target",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0109",
+      "question": "Which attribute is used to define the relationship between a linked document and the current document?",
+      "options": [
+        "rel",
+        "link",
+        "type",
+        "href"
+      ],
+      "answer": "rel",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0110",
+      "question": "Which tag is used to define a tooltip for an element?",
+      "options": [
+        "title",
+        "tooltip",
+        "alt",
+        "hover"
+      ],
+      "answer": "title",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0111",
+      "question": "Which HTML element is used to embed interactive content like maps or videos?",
+      "options": [
+        "<iframe>",
+        "<embed>",
+        "<object>",
+        "<section>"
+      ],
+      "answer": "<iframe>",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0112",
+      "question": "Which attribute is used with <input> to specify that a value must match a pattern?",
+      "options": [
+        "pattern",
+        "validate",
+        "match",
+        "type"
+      ],
+      "answer": "pattern",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0113",
+      "question": "Which attribute in <form> defines where to send the form-data?",
+      "options": [
+        "action",
+        "method",
+        "target",
+        "name"
+      ],
+      "answer": "action",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0114",
+      "question": "Which attribute in <form> specifies the HTTP method to send data?",
+      "options": [
+        "method",
+        "type",
+        "action",
+        "submit"
+      ],
+      "answer": "method",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0115",
+      "question": "Which HTML5 element is used to specify navigation links?",
+      "options": [
+        "<nav>",
+        "<menu>",
+        "<section>",
+        "<ul>"
+      ],
+      "answer": "<nav>",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0116",
+      "question": "Which HTML element is used to specify an article in a document?",
+      "options": [
+        "<article>",
+        "<section>",
+        "<div>",
+        "<content>"
+      ],
+      "answer": "<article>",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0117",
+      "question": "Which attribute in <a> tag specifies the URL of the link?",
+      "options": [
+        "href",
+        "src",
+        "url",
+        "link"
+      ],
+      "answer": "href",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0118",
+      "question": "Which attribute is used to define a language for an HTML document?",
+      "options": [
+        "lang",
+        "language",
+        "dir",
+        "xml:lang"
+      ],
+      "answer": "lang",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0119",
+      "question": "Which HTML5 element is used to display content in a separate section, independent of the main content?",
+      "options": [
+        "<aside>",
+        "<section>",
+        "<article>",
+        "<div>"
+      ],
+      "answer": "<aside>",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0120",
+      "question": "Which attribute is used in <input type='number'> to set a minimum value?",
+      "options": [
+        "min",
+        "maxlength",
+        "minlength",
+        "value"
+      ],
+      "answer": "min",
+      "category": "HTML",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0121",
+      "question": "Which HTML5 attribute specifies that an input field should automatically get focus when the page loads?",
+      "options": [
+        "autofocus",
+        "focus",
+        "active",
+        "default"
+      ],
+      "answer": "autofocus",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0122",
+      "question": "Which HTML element is used to define a canvas for graphics?",
+      "options": [
+        "<canvas>",
+        "<svg>",
+        "<graphic>",
+        "<draw>"
+      ],
+      "answer": "<canvas>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0123",
+      "question": "Which method is used in <form> to submit form data asynchronously using HTML5 features?",
+      "options": [
+        "AJAX",
+        "fetch",
+        "get/post",
+        "submitAsync"
+      ],
+      "answer": "AJAX",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0124",
+      "question": "Which HTML element is used to define an embedded SVG?",
+      "options": [
+        "<svg>",
+        "<vector>",
+        "<image>",
+        "<graphic>"
+      ],
+      "answer": "<svg>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0125",
+      "question": "Which attribute in <meta> specifies the character encoding for an HTML document?",
+      "options": [
+        "charset",
+        "encoding",
+        "type",
+        "lang"
+      ],
+      "answer": "charset",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0126",
+      "question": "Which HTML element allows playing multiple video formats for compatibility?",
+      "options": [
+        "<source>",
+        "<track>",
+        "<video>",
+        "<media>"
+      ],
+      "answer": "<source>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0127",
+      "question": "Which HTML5 attribute is used to specify a maximum number of characters in a text input field?",
+      "options": [
+        "maxlength",
+        "max",
+        "size",
+        "limit"
+      ],
+      "answer": "maxlength",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0128",
+      "question": "Which tag is used to define a group of related options in a drop-down list?",
+      "options": [
+        "<optgroup>",
+        "<group>",
+        "<selectgroup>",
+        "<options>"
+      ],
+      "answer": "<optgroup>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0129",
+      "question": "Which HTML5 element is used to provide captions for <video> and <audio>?",
+      "options": [
+        "<track>",
+        "<caption>",
+        "<subtitles>",
+        "<media>"
+      ],
+      "answer": "<track>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0130",
+      "question": "Which HTML5 input type allows selection of a date using a date picker?",
+      "options": [
+        "date",
+        "datetime",
+        "calendar",
+        "time"
+      ],
+      "answer": "date",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0131",
+      "question": "Which attribute is used in <iframe> to prevent it from accessing the parent page's cookies or storage?",
+      "options": [
+        "sandbox",
+        "secure",
+        "nocookies",
+        "restricted"
+      ],
+      "answer": "sandbox",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0132",
+      "question": "Which HTML element allows you to specify multiple source files for a media file?",
+      "options": [
+        "<source>",
+        "<media>",
+        "<video>",
+        "<audio>"
+      ],
+      "answer": "<source>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0133",
+      "question": "Which HTML element is used to define the base URL for relative URLs in a page?",
+      "options": [
+        "<base>",
+        "<link>",
+        "<url>",
+        "<head>"
+      ],
+      "answer": "<base>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0134",
+      "question": "Which HTML5 attribute in <input> restricts values to a specific pattern using regular expressions?",
+      "options": [
+        "pattern",
+        "regex",
+        "validate",
+        "format"
+      ],
+      "answer": "pattern",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0135",
+      "question": "Which HTML element is used to define a popup tooltip with additional information?",
+      "options": [
+        "<details>",
+        "<tooltip>",
+        "<aside>",
+        "<span>"
+      ],
+      "answer": "<details>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0136",
+      "question": "Which HTML attribute in <audio> or <video> specifies the media should start over again when it ends?",
+      "options": [
+        "loop",
+        "repeat",
+        "restart",
+        "autoplay"
+      ],
+      "answer": "loop",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0137",
+      "question": "Which HTML element allows showing alternative content if the browser does not support an element?",
+      "options": [
+        "<object>",
+        "<noscript>",
+        "<fallback>",
+        "<embed>"
+      ],
+      "answer": "<object>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0138",
+      "question": "Which HTML element is used to embed external content like interactive widgets or ads?",
+      "options": [
+        "<embed>",
+        "<iframe>",
+        "<object>",
+        "<section>"
+      ],
+      "answer": "<embed>",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0139",
+      "question": "Which HTML attribute defines the tooltip text for an element, displayed on hover?",
+      "options": [
+        "title",
+        "alt",
+        "tooltip",
+        "hovertext"
+      ],
+      "answer": "title",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0140",
+      "question": "Which attribute in <form> specifies that the form should not be autocomplete by the browser?",
+      "options": [
+        "autocomplete='off'",
+        "novalidate",
+        "autofill='no'",
+        "noform='true'"
+      ],
+      "answer": "autocomplete='off'",
+      "category": "HTML",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0101",
+      "question": "Which CSS property is used to change the text color of an element?",
+      "options": [
+        "color",
+        "font-color",
+        "text-color",
+        "background-color"
+      ],
+      "answer": "color",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0102",
+      "question": "Which CSS property controls the space between lines of text?",
+      "options": [
+        "line-height",
+        "letter-spacing",
+        "text-indent",
+        "word-spacing"
+      ],
+      "answer": "line-height",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0103",
+      "question": "Which CSS property is used to make text bold?",
+      "options": [
+        "font-weight",
+        "text-bold",
+        "font-style",
+        "text-decoration"
+      ],
+      "answer": "font-weight",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0104",
+      "question": "Which CSS property changes the background color of an element?",
+      "options": [
+        "background-color",
+        "color",
+        "bg-color",
+        "background-style"
+      ],
+      "answer": "background-color",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0105",
+      "question": "Which CSS property controls the font size of text?",
+      "options": [
+        "font-size",
+        "text-size",
+        "font-style",
+        "text-style"
+      ],
+      "answer": "font-size",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0106",
+      "question": "Which CSS property is used to underline text?",
+      "options": [
+        "text-decoration",
+        "text-style",
+        "font-decoration",
+        "underline"
+      ],
+      "answer": "text-decoration",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0107",
+      "question": "Which CSS property sets the element's left and right margin to auto?",
+      "options": [
+        "margin",
+        "padding",
+        "border",
+        "align"
+      ],
+      "answer": "margin",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0108",
+      "question": "Which CSS property is used to remove the bullet points from a list?",
+      "options": [
+        "list-style-type",
+        "list-style",
+        "text-style",
+        "bullet-style"
+      ],
+      "answer": "list-style-type",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0109",
+      "question": "Which CSS property controls the space between letters?",
+      "options": [
+        "letter-spacing",
+        "line-height",
+        "word-spacing",
+        "text-spacing"
+      ],
+      "answer": "letter-spacing",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0110",
+      "question": "Which CSS property sets the width of an element?",
+      "options": [
+        "width",
+        "size",
+        "max-width",
+        "element-width"
+      ],
+      "answer": "width",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0111",
+      "question": "Which CSS property sets the height of an element?",
+      "options": [
+        "height",
+        "size",
+        "max-height",
+        "element-height"
+      ],
+      "answer": "height",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0112",
+      "question": "Which CSS property adds space inside an element's border?",
+      "options": [
+        "padding",
+        "margin",
+        "spacing",
+        "border-spacing"
+      ],
+      "answer": "padding",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0113",
+      "question": "Which CSS property adds space outside an element's border?",
+      "options": [
+        "margin",
+        "padding",
+        "spacing",
+        "border-spacing"
+      ],
+      "answer": "margin",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0114",
+      "question": "Which CSS property changes the typeface of text?",
+      "options": [
+        "font-family",
+        "font-style",
+        "text-font",
+        "font-type"
+      ],
+      "answer": "font-family",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0115",
+      "question": "Which CSS property is used to hide an element?",
+      "options": [
+        "display",
+        "visibility",
+        "opacity",
+        "hide"
+      ],
+      "answer": "display",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0116",
+      "question": "Which CSS property adds a shadow to text?",
+      "options": [
+        "text-shadow",
+        "box-shadow",
+        "shadow",
+        "font-shadow"
+      ],
+      "answer": "text-shadow",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0117",
+      "question": "Which CSS property rounds the corners of an element?",
+      "options": [
+        "border-radius",
+        "border-round",
+        "corner-radius",
+        "radius"
+      ],
+      "answer": "border-radius",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0118",
+      "question": "Which CSS property sets the style of the border?",
+      "options": [
+        "border-style",
+        "border-type",
+        "border-line",
+        "border-format"
+      ],
+      "answer": "border-style",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0119",
+      "question": "Which CSS property sets the color of the border?",
+      "options": [
+        "border-color",
+        "border-style",
+        "border",
+        "color"
+      ],
+      "answer": "border-color",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0120",
+      "question": "Which CSS property makes text italic?",
+      "options": [
+        "font-style",
+        "text-style",
+        "font-weight",
+        "text-italic"
+      ],
+      "answer": "font-style",
+      "category": "CSS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0121",
+      "question": "Which CSS property is used to control how text wraps inside an element?",
+      "options": [
+        "word-wrap",
+        "text-wrap",
+        "text-overflow",
+        "wrap-text"
+      ],
+      "answer": "word-wrap",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0122",
+      "question": "Which CSS property controls the opacity of an element?",
+      "options": [
+        "opacity",
+        "visibility",
+        "filter",
+        "transparency"
+      ],
+      "answer": "opacity",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0123",
+      "question": "Which CSS property is used to change the stacking order of elements?",
+      "options": [
+        "z-index",
+        "stack-order",
+        "order",
+        "position"
+      ],
+      "answer": "z-index",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0124",
+      "question": "Which CSS property defines how an element is positioned?",
+      "options": [
+        "position",
+        "float",
+        "display",
+        "placement"
+      ],
+      "answer": "position",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0125",
+      "question": "Which CSS property is used to add space between columns in a multi-column layout?",
+      "options": [
+        "column-gap",
+        "column-spacing",
+        "gap",
+        "margin"
+      ],
+      "answer": "column-gap",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0126",
+      "question": "Which CSS property specifies the type of cursor to display?",
+      "options": [
+        "cursor",
+        "pointer",
+        "mouse",
+        "hover"
+      ],
+      "answer": "cursor",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0127",
+      "question": "Which CSS property is used to specify a transition effect for a property change?",
+      "options": [
+        "transition",
+        "transform",
+        "animation",
+        "effect"
+      ],
+      "answer": "transition",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0128",
+      "question": "Which CSS property specifies the type of list item marker for a list?",
+      "options": [
+        "list-style-type",
+        "marker-type",
+        "bullet-type",
+        "list-type"
+      ],
+      "answer": "list-style-type",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0129",
+      "question": "Which CSS property allows you to make a flex container?",
+      "options": [
+        "display: flex",
+        "display: block",
+        "display: inline",
+        "display: grid"
+      ],
+      "answer": "display: flex",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0130",
+      "question": "Which CSS property defines how the background image is repeated?",
+      "options": [
+        "background-repeat",
+        "background-style",
+        "background-loop",
+        "repeat-style"
+      ],
+      "answer": "background-repeat",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0131",
+      "question": "Which CSS property specifies how an element floats?",
+      "options": [
+        "float",
+        "position",
+        "display",
+        "clear"
+      ],
+      "answer": "float",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0132",
+      "question": "Which CSS property controls whether text is clipped, ellipsis, or visible when overflowing?",
+      "options": [
+        "text-overflow",
+        "overflow",
+        "clip",
+        "word-wrap"
+      ],
+      "answer": "text-overflow",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0133",
+      "question": "Which CSS property sets the minimum width of an element?",
+      "options": [
+        "min-width",
+        "max-width",
+        "width",
+        "element-width"
+      ],
+      "answer": "min-width",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0134",
+      "question": "Which CSS property sets the maximum height of an element?",
+      "options": [
+        "max-height",
+        "min-height",
+        "height",
+        "element-height"
+      ],
+      "answer": "max-height",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0135",
+      "question": "Which CSS property specifies the order of flex items?",
+      "options": [
+        "order",
+        "flex-order",
+        "z-index",
+        "position"
+      ],
+      "answer": "order",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0136",
+      "question": "Which CSS property defines the alignment of items along the cross-axis in flexbox?",
+      "options": [
+        "align-items",
+        "justify-content",
+        "align-self",
+        "flex-align"
+      ],
+      "answer": "align-items",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0137",
+      "question": "Which CSS property defines the alignment of flex items along the main axis?",
+      "options": [
+        "justify-content",
+        "align-items",
+        "align-content",
+        "flex-align"
+      ],
+      "answer": "justify-content",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0138",
+      "question": "Which CSS property sets the background image of an element?",
+      "options": [
+        "background-image",
+        "background-src",
+        "image-url",
+        "img-src"
+      ],
+      "answer": "background-image",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0139",
+      "question": "Which CSS property specifies whether an element is scrollable or hidden if overflow occurs?",
+      "options": [
+        "overflow",
+        "scroll",
+        "clip",
+        "visibility"
+      ],
+      "answer": "overflow",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0140",
+      "question": "Which CSS property allows you to create grid layouts?",
+      "options": [
+        "display: grid",
+        "display: flex",
+        "position: grid",
+        "grid-layout"
+      ],
+      "answer": "display: grid",
+      "category": "CSS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0141",
+      "question": "Which CSS pseudo-class targets the first child element of its parent?",
+      "options": [
+        ":first-child",
+        ":nth-child(1)",
+        ":first",
+        ":child:first"
+      ],
+      "answer": ":first-child",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0142",
+      "question": "Which CSS function is used to apply a blur effect to an element?",
+      "options": [
+        "blur()",
+        "filter()",
+        "shadow()",
+        "opacity()"
+      ],
+      "answer": "blur()",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0143",
+      "question": "Which CSS property defines the timing function of a transition?",
+      "options": [
+        "transition-timing-function",
+        "transition-speed",
+        "transition-duration",
+        "animation-timing"
+      ],
+      "answer": "transition-timing-function",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0144",
+      "question": "Which CSS property is used to create a 3D transformation?",
+      "options": [
+        "transform",
+        "perspective",
+        "rotate3d",
+        "translateZ"
+      ],
+      "answer": "transform",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0145",
+      "question": "Which CSS property is used to apply multiple background images to an element?",
+      "options": [
+        "background-image",
+        "background",
+        "image-stack",
+        "multi-background"
+      ],
+      "answer": "background-image",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0146",
+      "question": "Which CSS pseudo-element targets the first letter of an element?",
+      "options": [
+        "::first-letter",
+        "::first",
+        ":first-letter",
+        ":letter:first"
+      ],
+      "answer": "::first-letter",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0147",
+      "question": "Which CSS property defines the perspective of a 3D transformed element?",
+      "options": [
+        "perspective",
+        "transform",
+        "perspective-origin",
+        "depth"
+      ],
+      "answer": "perspective",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0148",
+      "question": "Which CSS property specifies how a flex container wraps its items?",
+      "options": [
+        "flex-wrap",
+        "flex-direction",
+        "flex-flow",
+        "wrap-items"
+      ],
+      "answer": "flex-wrap",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0149",
+      "question": "Which CSS property is used to create a gradient background?",
+      "options": [
+        "background-image",
+        "gradient",
+        "bg-gradient",
+        "color-gradient"
+      ],
+      "answer": "background-image",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0150",
+      "question": "Which CSS function allows you to rotate an element around a 3D axis?",
+      "options": [
+        "rotate3d()",
+        "rotate()",
+        "rotateX()",
+        "rotateY()"
+      ],
+      "answer": "rotate3d()",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0151",
+      "question": "Which CSS property is used to control how child elements align along the cross-axis in a flex container?",
+      "options": [
+        "align-items",
+        "justify-content",
+        "align-content",
+        "flex-align"
+      ],
+      "answer": "align-items",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0152",
+      "question": "Which CSS property sets the animation to play in reverse on alternate cycles?",
+      "options": [
+        "animation-direction",
+        "animation-play-state",
+        "animation-iteration",
+        "animation-fill-mode"
+      ],
+      "answer": "animation-direction",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0153",
+      "question": "Which CSS property allows smooth scrolling behavior for an element?",
+      "options": [
+        "scroll-behavior",
+        "scroll-smooth",
+        "scrolling",
+        "overflow-scroll"
+      ],
+      "answer": "scroll-behavior",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0154",
+      "question": "Which CSS pseudo-class selects elements that are being hovered over?",
+      "options": [
+        ":hover",
+        ":active",
+        ":focus",
+        ":pointer"
+      ],
+      "answer": ":hover",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0155",
+      "question": "Which CSS property sets the style of an element’s scrollbar in WebKit browsers?",
+      "options": [
+        "::-webkit-scrollbar",
+        "scrollbar-style",
+        "scrollbar",
+        "scrollbar-webkit"
+      ],
+      "answer": "::-webkit-scrollbar",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0156",
+      "question": "Which CSS property defines how the text shadows are rendered?",
+      "options": [
+        "text-shadow",
+        "shadow",
+        "box-shadow",
+        "filter-shadow"
+      ],
+      "answer": "text-shadow",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0157",
+      "question": "Which CSS property allows content to be displayed in multiple columns?",
+      "options": [
+        "column-count",
+        "columns",
+        "multi-column",
+        "column-layout"
+      ],
+      "answer": "column-count",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0158",
+      "question": "Which CSS property allows an element to stick in a specific position while scrolling?",
+      "options": [
+        "position: sticky",
+        "position: fixed",
+        "position: relative",
+        "position: absolute"
+      ],
+      "answer": "position: sticky",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0159",
+      "question": "Which CSS pseudo-class selects elements that are the nth child of their parent?",
+      "options": [
+        ":nth-child()",
+        ":first-child",
+        ":last-child",
+        ":nth-of-type()"
+      ],
+      "answer": ":nth-child()",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0160",
+      "question": "Which CSS property applies a shadow effect to a box?",
+      "options": [
+        "box-shadow",
+        "shadow",
+        "text-shadow",
+        "border-shadow"
+      ],
+      "answer": "box-shadow",
+      "category": "CSS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0161",
+      "question": "Which symbol is used for single-line comments in JavaScript?",
+      "options": [
+        "//",
+        "/* */",
+        "#",
+        "<!-- -->"
+      ],
+      "answer": "//",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0162",
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "options": [
+        "var",
+        "letit",
+        "variable",
+        "dim"
+      ],
+      "answer": "var",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0163",
+      "question": "Which JavaScript function displays a message in a popup box?",
+      "options": [
+        "alert()",
+        "prompt()",
+        "confirm()",
+        "console.log()"
+      ],
+      "answer": "alert()",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0164",
+      "question": "Which operator is used to assign a value to a variable?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        "=>"
+      ],
+      "answer": "=",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0165",
+      "question": "Which keyword is used to define a constant variable?",
+      "options": [
+        "const",
+        "let",
+        "var",
+        "constant"
+      ],
+      "answer": "const",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0166",
+      "question": "Which method converts a JSON string into a JavaScript object?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "parseJSON()",
+        "JSON.toObject()"
+      ],
+      "answer": "JSON.parse()",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0167",
+      "question": "Which symbol is used for strict equality comparison in JavaScript?",
+      "options": [
+        "===",
+        "==",
+        "=",
+        "!=="
+      ],
+      "answer": "===",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0168",
+      "question": "Which method is used to output messages to the console?",
+      "options": [
+        "console.log()",
+        "print()",
+        "alert()",
+        "write()"
+      ],
+      "answer": "console.log()",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0169",
+      "question": "Which JavaScript data type is used to represent true or false?",
+      "options": [
+        "Boolean",
+        "String",
+        "Number",
+        "Object"
+      ],
+      "answer": "Boolean",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0170",
+      "question": "Which method adds an element to the end of an array?",
+      "options": [
+        "push()",
+        "pop()",
+        "shift()",
+        "unshift()"
+      ],
+      "answer": "push()",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0171",
+      "question": "Which method removes the last element from an array?",
+      "options": [
+        "pop()",
+        "push()",
+        "shift()",
+        "unshift()"
+      ],
+      "answer": "pop()",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0172",
+      "question": "Which keyword is used to define a function in JavaScript?",
+      "options": [
+        "function",
+        "def",
+        "fun",
+        "method"
+      ],
+      "answer": "function",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0173",
+      "question": "Which method converts a JavaScript object into a JSON string?",
+      "options": [
+        "JSON.stringify()",
+        "JSON.parse()",
+        "toJSON()",
+        "JSON.objectify()"
+      ],
+      "answer": "JSON.stringify()",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0174",
+      "question": "Which operator is used to concatenate strings in JavaScript?",
+      "options": [
+        "+",
+        "-",
+        "*",
+        "&"
+      ],
+      "answer": "+",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0175",
+      "question": "Which keyword is used to check a condition and execute code if true?",
+      "options": [
+        "if",
+        "while",
+        "for",
+        "switch"
+      ],
+      "answer": "if",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0176",
+      "question": "Which keyword is used to declare a variable with block scope?",
+      "options": [
+        "let",
+        "var",
+        "const",
+        "block"
+      ],
+      "answer": "let",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0177",
+      "question": "Which method returns the length of an array?",
+      "options": [
+        "length",
+        "size",
+        "count",
+        "arrayLength()"
+      ],
+      "answer": "length",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0178",
+      "question": "Which symbol is used for inequality comparison in JavaScript?",
+      "options": [
+        "!=",
+        "==",
+        "===",
+        "<>",
+        "!=="
+      ],
+      "answer": "!=",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0179",
+      "question": "Which method removes the first element from an array?",
+      "options": [
+        "shift()",
+        "pop()",
+        "unshift()",
+        "splice()"
+      ],
+      "answer": "shift()",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0180",
+      "question": "Which statement is used to terminate a loop early in JavaScript?",
+      "options": [
+        "break",
+        "continue",
+        "exit",
+        "stop"
+      ],
+      "answer": "break",
+      "category": "JS",
+      "difficulty": "easy"
+    },
+    {
+      "id": "0181",
+      "question": "Which method creates a new array with the results of calling a function on every element?",
+      "options": [
+        "map()",
+        "forEach()",
+        "filter()",
+        "reduce()"
+      ],
+      "answer": "map()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0182",
+      "question": "Which method creates a new array with all elements that pass a test?",
+      "options": [
+        "filter()",
+        "map()",
+        "reduce()",
+        "find()"
+      ],
+      "answer": "filter()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0183",
+      "question": "Which method executes a reducer function on each element of an array, resulting in a single value?",
+      "options": [
+        "reduce()",
+        "map()",
+        "filter()",
+        "forEach()"
+      ],
+      "answer": "reduce()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0184",
+      "question": "Which property is used to get the current URL of the window?",
+      "options": [
+        "window.location.href",
+        "document.URL",
+        "location.href",
+        "All of the above"
+      ],
+      "answer": "All of the above",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0185",
+      "question": "Which JavaScript keyword is used to refer to the current object?",
+      "options": [
+        "this",
+        "self",
+        "current",
+        "me"
+      ],
+      "answer": "this",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0186",
+      "question": "Which method adds one or more elements to the beginning of an array?",
+      "options": [
+        "unshift()",
+        "push()",
+        "shift()",
+        "concat()"
+      ],
+      "answer": "unshift()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0187",
+      "question": "Which method returns the first element that satisfies a condition in an array?",
+      "options": [
+        "find()",
+        "filter()",
+        "map()",
+        "indexOf()"
+      ],
+      "answer": "find()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0188",
+      "question": "Which method determines whether an array includes a certain element?",
+      "options": [
+        "includes()",
+        "indexOf()",
+        "find()",
+        "some()"
+      ],
+      "answer": "includes()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0189",
+      "question": "Which property is used to get or set the text content of an element?",
+      "options": [
+        "textContent",
+        "innerText",
+        "innerHTML",
+        "value"
+      ],
+      "answer": "textContent",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0190",
+      "question": "Which method removes elements from an array by index and can insert new elements?",
+      "options": [
+        "splice()",
+        "slice()",
+        "pop()",
+        "shift()"
+      ],
+      "answer": "splice()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0191",
+      "question": "Which method returns a shallow copy of a portion of an array into a new array?",
+      "options": [
+        "slice()",
+        "splice()",
+        "map()",
+        "filter()"
+      ],
+      "answer": "slice()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0192",
+      "question": "Which event occurs when the user clicks on an HTML element?",
+      "options": [
+        "onclick",
+        "onmouseover",
+        "onchange",
+        "onfocus"
+      ],
+      "answer": "onclick",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0193",
+      "question": "Which method is used to create a new object that inherits from a prototype?",
+      "options": [
+        "Object.create()",
+        "new Object()",
+        "Object.assign()",
+        "Object.prototype()"
+      ],
+      "answer": "Object.create()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0194",
+      "question": "Which operator is used to check if a property exists in an object?",
+      "options": [
+        "in",
+        "hasOwnProperty",
+        "typeof",
+        "instanceof"
+      ],
+      "answer": "in",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0195",
+      "question": "Which method is used to merge two or more objects?",
+      "options": [
+        "Object.assign()",
+        "Object.merge()",
+        "Object.concat()",
+        "Object.combine()"
+      ],
+      "answer": "Object.assign()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0196",
+      "question": "Which method returns an array of a given object's own enumerable property names?",
+      "options": [
+        "Object.keys()",
+        "Object.values()",
+        "Object.entries()",
+        "Object.getOwnPropertyNames()"
+      ],
+      "answer": "Object.keys()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0197",
+      "question": "Which statement creates a loop that iterates over the properties of an object?",
+      "options": [
+        "for...in",
+        "for...of",
+        "while",
+        "do...while"
+      ],
+      "answer": "for...in",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0198",
+      "question": "Which method adds an event listener to an element?",
+      "options": [
+        "addEventListener()",
+        "attachEvent()",
+        "onEvent()",
+        "setEventListener()"
+      ],
+      "answer": "addEventListener()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0199",
+      "question": "Which method converts an object into an array of [key, value] pairs?",
+      "options": [
+        "Object.entries()",
+        "Object.keys()",
+        "Object.values()",
+        "Object.toArray()"
+      ],
+      "answer": "Object.entries()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0200",
+      "question": "Which method checks if at least one element in an array passes a test?",
+      "options": [
+        "some()",
+        "every()",
+        "filter()",
+        "map()"
+      ],
+      "answer": "some()",
+      "category": "JS",
+      "difficulty": "medium"
+    },
+    {
+      "id": "0201",
+      "question": "Which JavaScript feature allows a function to remember the scope in which it was created?",
+      "options": [
+        "Closure",
+        "Prototype",
+        "Callback",
+        "Promise"
+      ],
+      "answer": "Closure",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0202",
+      "question": "Which method is used to handle asynchronous operations in JavaScript?",
+      "options": [
+        "Promise",
+        "setTimeout",
+        "forEach",
+        "map"
+      ],
+      "answer": "Promise",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0203",
+      "question": "Which keyword is used with functions to make them asynchronous?",
+      "options": [
+        "async",
+        "await",
+        "defer",
+        "async-await"
+      ],
+      "answer": "async",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0204",
+      "question": "Which method is used to wait for a Promise to resolve inside an async function?",
+      "options": [
+        "await",
+        "then()",
+        "resolve()",
+        "async"
+      ],
+      "answer": "await",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0205",
+      "question": "Which object in JavaScript represents the eventual completion of an asynchronous operation?",
+      "options": [
+        "Promise",
+        "Callback",
+        "Event",
+        "Generator"
+      ],
+      "answer": "Promise",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0206",
+      "question": "Which method handles errors in a Promise chain?",
+      "options": [
+        "catch()",
+        "then()",
+        "finally()",
+        "error()"
+      ],
+      "answer": "catch()",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0207",
+      "question": "Which feature allows creating objects that share properties and methods in JavaScript?",
+      "options": [
+        "Prototype",
+        "Class",
+        "Closure",
+        "Module"
+      ],
+      "answer": "Prototype",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0208",
+      "question": "Which keyword is used to define a class in JavaScript?",
+      "options": [
+        "class",
+        "function",
+        "object",
+        "prototype"
+      ],
+      "answer": "class",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0209",
+      "question": "Which method adds code to be executed after a Promise is settled (fulfilled or rejected)?",
+      "options": [
+        "finally()",
+        "then()",
+        "catch()",
+        "resolve()"
+      ],
+      "answer": "finally()",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0210",
+      "question": "Which operator checks whether an object inherits from another object's prototype?",
+      "options": [
+        "instanceof",
+        "typeof",
+        "in",
+        "hasOwnProperty"
+      ],
+      "answer": "instanceof",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0211",
+      "question": "Which JavaScript feature allows pausing and resuming functions?",
+      "options": [
+        "Generator",
+        "Closure",
+        "Async function",
+        "Event loop"
+      ],
+      "answer": "Generator",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0212",
+      "question": "Which method resumes execution of a generator function after a yield statement?",
+      "options": [
+        "next()",
+        "resume()",
+        "start()",
+        "continue()"
+      ],
+      "answer": "next()",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0213",
+      "question": "Which feature ensures code is executed asynchronously without blocking the main thread?",
+      "options": [
+        "Event loop",
+        "Closure",
+        "Prototype",
+        "Async function"
+      ],
+      "answer": "Event loop",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0214",
+      "question": "Which method converts a JavaScript value to a JSON string?",
+      "options": [
+        "JSON.stringify()",
+        "JSON.parse()",
+        "Object.toString()",
+        "JSON.toObject()"
+      ],
+      "answer": "JSON.stringify()",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0215",
+      "question": "Which method converts a JSON string to a JavaScript object?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "Object.fromJSON()",
+        "JSON.toObject()"
+      ],
+      "answer": "JSON.parse()",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0216",
+      "question": "Which JavaScript feature allows modules to import and export code between files?",
+      "options": [
+        "ES6 Modules",
+        "Promises",
+        "Closure",
+        "Prototype"
+      ],
+      "answer": "ES6 Modules",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0217",
+      "question": "Which method is used to define default values for function parameters in ES6?",
+      "options": [
+        "Default parameters",
+        "Rest parameters",
+        "Spread operator",
+        "Destructuring"
+      ],
+      "answer": "Default parameters",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0218",
+      "question": "Which operator spreads elements of an array or object into another array or object?",
+      "options": [
+        "... (spread operator)",
+        "+",
+        "&",
+        "=>"
+      ],
+      "answer": "... (spread operator)",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0219",
+      "question": "Which ES6 feature allows unpacking values from arrays or properties from objects?",
+      "options": [
+        "Destructuring",
+        "Spread operator",
+        "Template literals",
+        "Rest parameters"
+      ],
+      "answer": "Destructuring",
+      "category": "JS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "0220",
+      "question": "Which method schedules a function to run after the current call stack is empty, before rendering?",
+      "options": [
+        "setTimeout(fn, 0)",
+        "setInterval(fn, 0)",
+        "requestAnimationFrame(fn)",
+        "Promise.then(fn)"
+      ],
+      "answer": "setTimeout(fn, 0)",
+      "category": "JS",
+      "difficulty": "hard"
+    }
+  ],
+  "quizHistory": [
+    {
+      "id": "cf97",
+      "username": "K.Chandana",
+      "score": 14,
+      "total": 20,
+      "category": "HTML",
+      "date": "12/23/2025, 9:30:28 PM"
+    },
+    {
+      "id": "0b7b",
+      "username": "K.Chandana",
+      "score": 0,
+      "total": 20,
+      "category": "HTML",
+      "date": "12/24/2025, 4:31:51 PM"
+    },
+    {
+      "id": "551e",
+      "username": "K.Chandana",
+      "score": 8,
+      "total": 20,
+      "category": "HTML",
+      "date": "12/24/2025, 5:26:02 PM"
+    },
+    {
+      "id": "bc1a",
+      "username": "K.Durga Sri",
+      "score": 8,
+      "total": 20,
+      "category": "HTML",
+      "date": "12/24/2025, 6:29:23 PM"
+    },
+    {
+      "id": "fa00",
+      "username": "K.Durga Sri",
+      "score": 13,
+      "total": 20,
+      "category": "HTML",
+      "date": "12/24/2025, 6:47:49 PM"
+    },
+    {
+      "id": "25bf",
+      "username": "K.Durga Sri",
+      "score": 16,
+      "total": 20,
+      "category": "HTML",
+      "date": "12/24/2025, 6:52:43 PM"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin@123",
+      "role": "admin"
+    },
+    {
+      "id": "ce97",
+      "username": "K.Chandana",
+      "email": "chandana@gmail.com",
+      "password": "chandana123",
+      "role": "user"
+    },
+    {
+      "id": "7869",
+      "username": "K.Durga Sri",
+      "email": "durga@gmail.com",
+      "password": "durga123",
+      "role": "user"
+    }
+  ]
+}

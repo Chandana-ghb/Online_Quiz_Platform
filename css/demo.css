@@ -1,0 +1,204 @@
+/* ===============================
+   GLOBAL STYLES
+================================ */
+body {
+  background-color: #e6f8f1; /* very light green */
+  color: #2d3436;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1F2933;
+}
+
+.demo-container {
+  max-width: 750px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+h1 {
+  color: #16C47F;
+  margin-bottom: 5px;
+  font-size: clamp(26px, 4vw, 36px);
+}
+
+.subtitle {
+  color: #FFD65A;
+  margin-bottom: 30px;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 500;
+}
+
+/* ===============================
+   QUESTION CARD
+================================ */
+.question-card {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.question-card h3 {
+  font-size: clamp(18px, 2.5vw, 22px);
+  color: #1F2933;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #E5E7EB;
+  background: #fff;
+  cursor: pointer;
+  font-size: clamp(14px, 1.8vw, 16px);
+  transition: all 0.3s ease;
+  color: #1F2933;
+}
+
+.option:hover {
+  border-color: #FF9D23;
+  background: #FFF7ED;
+}
+
+.correct {
+  background: #16C47F !important;
+  color: #fff;
+  border-color: #16C47F !important;
+}
+
+.wrong {
+  background: #F93827 !important;
+  color: #fff;
+  border-color: #F93827 !important;
+}
+
+/* ===============================
+   DEMO END
+================================ */
+.demo-end {
+  margin-top: 30px;
+  display: none;
+}
+
+.demo-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #16C47F;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #12885f;
+}
+
+.btn-outline {
+  border: 2px solid #16C47F;
+  color: #16C47F;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #16C47F;
+  color: white;
+}
+
+.btn-accent {
+  background: #FF9D23;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-accent:hover {
+  background: #e0891c;
+}
+
+/* ===============================
+   RESPONSIVE STYLING
+================================ */
+@media (max-width: 900px) {
+  .demo-container {
+    padding: 35px 25px;
+    margin: 30px 20px;
+  }
+
+  .option {
+    font-size: clamp(14px, 2vw, 16px);
+    padding: 12px;
+  }
+
+  .demo-buttons {
+    flex-direction: column;
+  }
+
+  .demo-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: clamp(22px, 5vw, 28px);
+  }
+
+  .subtitle {
+    font-size: clamp(14px, 3vw, 18px);
+  }
+
+  .question-card h3 {
+    font-size: clamp(16px, 3vw, 20px);
+  }
+
+  .option {
+    font-size: clamp(13px, 2.5vw, 15px);
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .demo-container {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .question-card h3 {
+    font-size: 16px;
+  }
+
+  .option {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

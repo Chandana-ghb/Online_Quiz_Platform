@@ -1,0 +1,277 @@
+/* =====================
+   COLOR THEME
+===================== */
+:root {
+  --green: #16C47F;
+  --yellow: #FFD65A;
+  --orange: #FF9D23;
+  --red: #F93827;
+  --bg: #f6f7fb;
+  --white: #ffffff;
+  --text: #333;
+  --radius: 14px;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background:#ecfdf5;
+  color: var(--text);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* =====================
+   DASHBOARD GRID
+===================== */
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
+
+  min-height: calc(100vh - 40px);
+  align-items: stretch;
+
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* =====================
+   CARD BASE
+===================== */
+.dashboard-card,
+.history-card,
+.leaderboard {
+  background: var(--white);
+  padding: 24px 24px 34px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: slideUp 0.7s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover,
+.history-card:hover,
+.leaderboard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* =====================
+   LEFT TOP – WELCOME
+===================== */
+.dashboard-card {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-top: 6px solid var(--green);
+}
+
+.dashboard-card h2 {
+  color: var(--green);
+  margin-bottom: 6px;
+}
+
+.dashboard-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Stats */
+.user-stats {
+  display: flex;
+  justify-content: space-between;
+  background: #f1fff8;
+  padding: 14px;
+  border-radius: 10px;
+  margin: 16px 0;
+  font-weight: 600;
+}
+
+/* =====================
+   DROPDOWNS
+===================== */
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(22, 196, 127, 0.25);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.button-group {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Start */
+.start {
+  background: linear-gradient(135deg, #16C47F, #10a96b);
+}
+
+.start:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(22, 196, 127, 0.45);
+}
+
+/* Logout */
+.logout {
+  background: linear-gradient(135deg, #F93827, #d92f1f);
+}
+
+.logout:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(249, 56, 39, 0.45);
+}
+
+/* =====================
+   LEFT BOTTOM – HISTORY
+===================== */
+.history-card {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  border-top: 6px solid var(--orange);
+}
+
+.history-card h3 {
+  color: var(--orange);
+  margin-bottom: 14px;
+}
+
+/* =====================
+   RIGHT – LEADERBOARD
+===================== */
+.section-title {
+  display: none;
+}
+
+.leaderboard {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  border-top: 6px solid var(--yellow);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Leaderboard heading (FIXED) */
+.leaderboard::before {
+  content: "🏆 Leaderboard";
+  font-size: 20px;
+  font-weight: 700;
+  color: #c9a400;
+  margin-bottom: 16px;
+}
+
+/* =====================
+   TABLE STYLES
+===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #fff9db;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+tbody tr {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+tbody tr:hover {
+  background: #fff3c4;
+  transform: scale(1.02);
+}
+
+tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.leaderboard table td:first-child {
+  font-size: 18px;
+}
+
+/* =====================
+   ANIMATIONS
+===================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .dashboard-card,
+  .history-card,
+  .leaderboard {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .section-title {
+    display: block;
+    margin: 12px 0;
+    color: var(--yellow);
+  }
+}

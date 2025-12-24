@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="icon" href="assets/favicon.jpg"/>
+</head>
+<body>
+
+<h2>👑 Admin Dashboard</h2>
+
+<div class="admin-section">
+  <h3>Total Users</h3>
+  <p id="userCount">0</p>
+</div>
+
+<div class="admin-section">
+  <h3>👤 All Users</h3>
+  <div class="table-container">
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="admin-section">
+  <h3>📝 Quiz Management</h3>
+  <button onclick="goQuestions()">Manage Questions</button>
+</div>
+
+<button onclick="adminLogout()">Logout</button>
+
+<script src="js/admin-panel.js"></script>
+</body>
+</html>

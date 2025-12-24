@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate</title>
+  <link rel="stylesheet" href="css/certificate.css">
+  <link rel="icon" href="assets/favicon.jpg"/>
+</head>
+<body>
+
+  <div class="certificate">
+    <h1>🎓 Certificate of Achievement</h1>
+    <p>This is proudly presented to</p>
+
+    <h2 id="certName"></h2>
+
+    <p>for successfully completing the quiz</p>
+
+    <p class="score">Score: <span id="certScore"></span></p>
+
+    <p class="date" id="certDate"></p>
+
+    <button onclick="downloadCertificate()">⬇ Download / Print</button>
+    <button onclick="goDashboard()">🏠 Back to Dashboard</button>
+  </div>
+
+  <script src="js/certificate.js"></script>
+</body>
+</html>

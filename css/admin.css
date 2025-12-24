@@ -1,0 +1,259 @@
+/* ===============================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===============================
+   BODY & CONTAINER
+================================ */
+body {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2d3436;
+  background: linear-gradient(135deg, #e6f8f1, #fffbe6, #fff3e0);
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #16C47F;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #FF9D23;
+}
+
+.admin-section, #questionList, .table-container {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.admin-section:hover {
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   USER COUNT
+================================ */
+#userCount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #16C47F;
+}
+
+/* ===============================
+   TABLE (Dashboard)
+================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #16C47F;
+  color: #fff;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #FFD65A33;
+}
+
+/* Table scrollable if too long */
+.table-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 12px;
+}
+
+/* ===============================
+   INPUTS & SELECTS (Questions Page)
+================================ */
+input, select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #16C47F;
+  outline: none;
+  box-shadow: 0 0 5px rgba(22,196,127,0.4);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  width: auto;
+  min-width: 140px;
+}
+
+.back-btn {
+  background-color: #FFD65A;
+  color: #2d3436;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #FF9D23;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(255,157,35,0.4);
+}
+
+/* Primary / Add / Update / Manage Questions */
+button:not(.back-btn):not([onclick="adminLogout()"]) {
+  background-color: #16C47F;
+  color: #fff;
+}
+
+button:not(.back-btn):not([onclick="adminLogout()"]):hover {
+  background-color: #FF9D23;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(255,157,35,0.4);
+}
+
+/* Logout button - narrower */
+button[onclick="adminLogout()"] {
+  background-color: #F93827;
+  color: #fff;
+  width: auto;
+  min-width: 140px;
+  padding: 10px 18px;
+}
+
+button[onclick="adminLogout()"]:hover {
+  background-color: #D12A1F;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(249,56,39,0.4);
+}
+
+/* ===============================
+   QUESTION LIST (Scrollable)
+================================ */
+#questionList {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+#questionList li {
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+#questionList li:hover {
+  transform: translateY(-2px);
+}
+
+#questionList li b {
+  color: #FFD65A;
+}
+
+#questionList li small {
+  display: block;
+  margin: 5px 0 10px 0;
+  color: #636e72;
+}
+
+/* Edit / Delete Buttons inside question list */
+#questionList li button {
+  min-width: 90px;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+#questionList li button:nth-child(1) { /* Edit */
+  background-color: #16C47F;
+  color: #fff;
+}
+
+#questionList li button:nth-child(1):hover {
+  background-color: #FF9D23;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(255,157,35,0.4);
+}
+
+#questionList li button:nth-child(2) { /* Delete */
+  background-color: #F93827;
+  color: #fff;
+}
+
+#questionList li button:nth-child(2):hover {
+  background-color: #D12A1F;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(249,56,39,0.4);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  h2 { font-size: 24px; }
+  h3 { font-size: 18px; }
+  #userCount { font-size: 28px; }
+  input, select { font-size: 14px; padding: 10px 12px; }
+  button { font-size: 14px; padding: 10px 15px; }
+  table th, table td { font-size: 14px; padding: 10px 8px; }
+  #questionList li { padding: 10px 12px; }
+  #questionList li button { font-size: 12px; padding: 5px 8px; }
+}
+
+@media (max-width: 480px) {
+  h2 { font-size: 22px; }
+  input, select { font-size: 13px; padding: 9px 10px; }
+  button { font-size: 13px; padding: 8px 12px; }
+  table th, table td { font-size: 13px; padding: 8px 6px; }
+  #questionList li { padding: 8px 10px; }
+  #questionList li button { font-size: 12px; padding: 4px 6px; }
+}

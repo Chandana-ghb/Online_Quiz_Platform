@@ -1,0 +1,193 @@
+/* ===============================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===============================
+   BACKGROUND - MULTICOLOR ANIMATED
+================================ */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(270deg, #16C47F, #FFD65A, #FF9D23, #F93827);
+  background-size: 800% 800%;
+  animation: rainbowShift 20s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glowing soft layer behind card */
+body::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
+  pointer-events: none;
+  animation: glowShift 12s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+/* ===============================
+   RESULT CARD
+================================ */
+.result-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 18px;
+  padding: 35px 30px;
+  text-align: center;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.25);
+  position: relative;
+  z-index: 1;
+  animation: cardEnter 0.9s ease forwards;
+}
+
+/* Result heading */
+#resultText {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  animation: slideDown 0.8s ease forwards;
+}
+
+/* Score */
+#scoreText {
+  font-size: 17px;
+  color: #1f2937;
+  margin-bottom: 18px;
+  animation: fadeUp 0.9s ease forwards;
+  animation-delay: 0.1s;
+}
+
+/* Feedback */
+#feedbackMessage {
+  background: #f1f5f9;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #334155;
+  margin-bottom: 28px;
+  animation: fadeUp 0.9s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.25s ease;
+  opacity: 0;
+  animation: buttonPop 0.6s ease forwards;
+}
+
+button:nth-of-type(1) { animation-delay: 0.3s; }
+button:nth-of-type(2) { animation-delay: 0.45s; }
+button:nth-of-type(3) { animation-delay: 0.6s; }
+
+/* Primary - Certificate */
+#certificateBtn {
+  background: linear-gradient(135deg, #16C47F, #FFD65A);
+  color: #ffffff;
+}
+
+#certificateBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(22,196,127,0.5);
+}
+
+/* Reattempt */
+button:not(.secondary):not(#certificateBtn) {
+  background: linear-gradient(135deg, #FF9D23, #F93827);
+  color: #ffffff;
+}
+
+button:not(.secondary):hover {
+  background: linear-gradient(135deg, #FF7A00, #D9301F);
+}
+
+/* Secondary */
+button.secondary {
+  background: transparent;
+  color: #16C47F;
+  border: 2px solid #16C47F;
+}
+
+button.secondary:hover {
+  background: #16C47F;
+  color: #ffffff;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 480px) {
+  .result-card {
+    padding: 30px 22px;
+  }
+
+  #resultText {
+    font-size: 24px;
+  }
+}
+
+/* ===============================
+   🎬 KEYFRAMES & ANIMATIONS
+================================ */
+
+/* Card entrance */
+@keyframes cardEnter {
+  from { opacity: 0; transform: scale(0.85) translateY(30px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Slide heading */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade up */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button pop */
+@keyframes buttonPop {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Rainbow gradient shift */
+@keyframes rainbowShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glow behind card */
+@keyframes glowShift {
+  0% { transform: rotate(0deg) translate(0,0); }
+  50% { transform: rotate(30deg) translate(10px, 10px); }
+  100% { transform: rotate(0deg) translate(0,0); }
+}

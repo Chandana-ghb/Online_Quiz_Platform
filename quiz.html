@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="icon" href="assets/favicon.jpg"/>
+</head>
+
+<body>
+
+    <div class="quiz-container">
+        <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+
+        <!-- HEADER -->
+        <div class="quiz-header">
+            <span id="username"></span>
+            <span id="progress">Question 1 / 1</span>
+            <span id="timer">10:00</span>
+        </div>
+
+        <div class="progress-bar-container">
+            <div id="progressBar"></div>
+        </div>
+
+        <!-- QUESTION -->
+        <div class="question-card">
+            <h2 id="question">Question text here</h2>
+            <div id="optionsContainer" class="options"></div>
+        </div>
+
+    </div>
+
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>

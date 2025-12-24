@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result</title>
+  <link rel="icon" href="assets/favicon.jpg"/>
+  <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+
+  <div class="result-card">
+    <h2 id="resultText"></h2>
+    <p id="scoreText"></p>
+    <p id="feedbackMessage"></p>
+    <button id="certificateBtn" onclick="openCertificate()">🎓 Download Certificate</button>
+    <div class="button-group">
+      <button onclick="reattempt()">🔄 Reattempt Quiz</button>
+      <button class="secondary" onclick="goDashboard()">🏠 Dashboard</button>
+    </div>
+  </div>
+
+  <script src="js/result.js"></script>
+</body>
+</html>
