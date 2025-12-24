@@ -22,7 +22,7 @@ let editId = null;
 // Load Questions from JSON Server
 // ==========================
 async function loadQuestions() {
-    const res = await fetch("http://localhost:3000/questions");
+    const res = await fetch("https://online-quiz-platform-gjin.onrender.com/questions");
     const questions = await res.json();
     showQuestions(questions);
 }
@@ -64,14 +64,14 @@ async function addQuestion() {
     };
 
     if (editId) {
-        await fetch(`http://localhost:3000/questions/${editId}`, {
+        await fetch(`https://online-quiz-platform-gjin.onrender.com/questions/${editId}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(questionObj)
         });
         editId = null;
     } else {
-        await fetch("http://localhost:3000/questions", {
+        await fetch("https://online-quiz-platform-gjin.onrender.com/questions", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(questionObj)
@@ -86,7 +86,7 @@ async function addQuestion() {
 // Edit Question
 // ==========================
 async function editQuestion(id) {
-    const res = await fetch(`http://localhost:3000/questions/${id}`);
+    const res = await fetch(`https://online-quiz-platform-gjin.onrender.com/questions/${id}`);
     const item = await res.json();
 
     q.value = item.question;
@@ -106,7 +106,7 @@ async function editQuestion(id) {
 // ==========================
 async function deleteQuestion(id) {
     if (!confirm("Delete this question?")) return;
-    await fetch(`http://localhost:3000/questions/${id}`, { method: "DELETE" });
+    await fetch(`https://online-quiz-platform-gjin.onrender.com/questions/${id}`, { method: "DELETE" });
     loadQuestions();
 }
 
@@ -129,3 +129,4 @@ function goBack() {
 }
 
 loadQuestions();
+
