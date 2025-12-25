@@ -171,16 +171,17 @@ async function finishQuiz() {
     const totalMarks = questions.length; // each question = 1 mark
 
     await fetch("https://online-quiz-platform-gjin.onrender.com/quizHistory", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            username: user.username,
-            score,
-            total: totalMarks,
-            category: selectedCategory,
-            date: new Date().toLocaleString()
-        })
-    });
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    userId: user.id,
+    username: user.username,
+    score,
+    total: totalMarks,
+    category: selectedCategory,
+    date: new Date().toLocaleString()
+  })
+});
 
     // Save certificate
     function generateCertificateId() {
@@ -218,4 +219,5 @@ themeToggle.onclick = () => {
    START QUIZ
 ========================= */
 loadQuizQuestions();
+
 
