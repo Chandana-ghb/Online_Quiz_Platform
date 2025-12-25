@@ -52,6 +52,17 @@ function adminLogout() {
   window.location.href = "login.html";
 }
 
+async function loadQuizHistory() {
+  const res = await fetch(
+    "https://online-quiz-platform-gjin.onrender.com/quizHistory"
+  );
+  const history = await res.json();
+
+  console.log("Quiz Attempts:", history);
+}
+
+
 // Load data
 loadUsers();
+loadQuizHistory();
 
