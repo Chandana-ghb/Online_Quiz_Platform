@@ -61,8 +61,15 @@ async function loadQuizHistory() {
   console.log("Quiz Attempts:", history);
 }
 
+const attemptsByUser = {};
+
+history.forEach(attempt => {
+  attemptsByUser[attempt.username] =
+    (attemptsByUser[attempt.username] || 0) + 1;
+});
 
 // Load data
 loadUsers();
 loadQuizHistory();
+
 
