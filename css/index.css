@@ -273,3 +273,107 @@ footer {
     font-size: 14px;
   }
 }
+
+/* Modern hamburger toggle */
+.menu-toggle {
+  width: 35px;
+  height: 30px;
+  display: none; /* still hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #16C47F;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Slide effect when active */
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+
+/* Mobile overlay menu */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-buttons {
+    position: fixed;
+    top: 0;
+    right: -100%;              /* hidden off-screen */
+    width: 80%;                /* smaller menu width */
+    height: 100vh;
+    background: #ffffff;       /* solid background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+  }
+
+  .nav-buttons.active {
+    right: 0;                  /* slide in */
+  }
+
+  .nav-buttons a {
+    width: 90%;
+    text-align: center;
+    margin-left: 0;
+    font-size: 20px;
+    padding: 15px 0;
+    border-radius: 30px;
+    background: #16C47F;
+    color: #fff;
+    transition: background 0.3s ease;
+  }
+
+  .nav-buttons a.btn-outline {
+    background: #fff;
+    color: #16C47F;
+    border: 2px solid #16C47F;
+  }
+
+  .nav-buttons a:hover {
+    background: #FF9D23;
+    color: #fff;
+  }
+}
+
+/* Mobile overlay menu buttons shrink when menu opens */
+@media (max-width: 768px) {
+  .nav-buttons a {
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons.active a {
+    transform: scale(0.9); /* slightly smaller */
+  }
+}
+
+
+.nav-buttons.active a {
+  transform: scale(0.9);
+  padding: 12px 0; /* reduced from 15px */
+}

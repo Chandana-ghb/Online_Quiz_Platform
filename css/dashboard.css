@@ -92,10 +92,17 @@ body {
   display: flex;
   justify-content: space-between;
   background: #f1fff8;
-  padding: 14px;
+  /* padding: 14px; */
   border-radius: 10px;
   margin: 16px 0;
   font-weight: 600;
+}
+
+@media (min-width:320px) and (max-width:600px) {
+  .user-stats {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* =====================

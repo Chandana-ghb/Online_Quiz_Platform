@@ -9,11 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:title" content="Online Quiz Platform | Test Your Knowledge & Skills" />
   <meta property="og:description"
     content="Attempt interactive quizzes, track your scores, view leaderboard rankings, and improve your skills with our modern online quiz platform." />
-  <meta property="og:image" content="https://static.vecteezy.com/system/resources/previews/002/958/141/original/exam-and-quiz-vector.jpg" />
+  <meta property="og:image"
+    content="https://static.vecteezy.com/system/resources/previews/002/958/141/original/exam-and-quiz-vector.jpg" />
   <meta property="og:type" content="website" />
 </head>
 
@@ -21,12 +23,20 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <h2 class="logo">Quiz<span>Master</span></h2>
-    <div class="nav-buttons">
-      <a href="login.html" class="btn-outline">Login</a>
-      <a href="signup.html" class="btn-primary">Sign Up</a>
+    <div class="logo">Quiz<span>App</span></div>
+
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-buttons" id="navMenu">
+      <a href="./login.html" class="btn-outline">Login</a>
+      <a href="./signup.html" class="btn-primary">Signup</a>
     </div>
   </nav>
+
 
   <!-- HERO SECTION -->
   <section class="hero">
@@ -84,6 +94,18 @@
   <footer>
     <p>© 2025 QuizMaster | Online Quiz Platform</p>
   </footer>
+
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active"); // shows/hides buttons
+    });
+  </script>
+
+
 
 </body>
 

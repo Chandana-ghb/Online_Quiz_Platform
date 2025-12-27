@@ -2,8 +2,11 @@
    GLOBAL STYLES
 ================================ */
 body {
-  background-color: #e6f8f1; /* very light green */
-  color: #2d3436;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  min-height: 100vh;        /* full viewport height */
+  background-color: #e6f8f1;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -12,22 +15,25 @@ body {
 
 .demo-container {
   max-width: 750px;
-  margin: 40px auto;
+  width: 90%;
   background: #fff;
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.08);
   text-align: center;
+  transition: padding 0.3s ease;
+  margin: 0; /* centered by flexbox */
 }
 
 h1 {
   color: #16C47F;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: clamp(26px, 4vw, 36px);
+  font-weight: 700;
 }
 
 .subtitle {
-  color: #FFD65A;
+  color: #FF9D23;
   margin-bottom: 30px;
   font-size: clamp(16px, 2vw, 20px);
   font-weight: 500;
@@ -39,12 +45,18 @@ h1 {
 .question-card {
   text-align: left;
   margin-bottom: 30px;
+  background: #F9FAFB;
+  padding: 20px 18px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
 
 .question-card h3 {
   font-size: clamp(18px, 2.5vw, 22px);
   color: #1F2933;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .option {
@@ -84,24 +96,46 @@ h1 {
 .demo-end {
   margin-top: 30px;
   display: none;
+  text-align: center;
 }
 
-.demo-buttons {
-  margin-top: 20px;
+.demo-end h2 {
+  font-size: clamp(24px, 3vw, 30px);
+  color: #16C47F;
+  margin-bottom: 10px;
+}
+
+.demo-end p {
+  font-size: clamp(14px, 2vw, 16px);
+  color: #1F2933;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.demo-buttons,
+.demo-end a {
   display: flex;
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
 }
 
+.demo-buttons a,
+.demo-end a {
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 12px 26px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
 .btn-primary {
   background: #16C47F;
   color: white;
-  padding: 12px 26px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -111,11 +145,6 @@ h1 {
 .btn-outline {
   border: 2px solid #16C47F;
   color: #16C47F;
-  padding: 12px 26px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
 }
 
 .btn-outline:hover {
@@ -126,11 +155,6 @@ h1 {
 .btn-accent {
   background: #FF9D23;
   color: white;
-  padding: 12px 26px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
 }
 
 .btn-accent:hover {
@@ -143,7 +167,7 @@ h1 {
 @media (max-width: 900px) {
   .demo-container {
     padding: 35px 25px;
-    margin: 30px 20px;
+    width: 95%;
   }
 
   .option {
@@ -151,17 +175,23 @@ h1 {
     padding: 12px;
   }
 
-  .demo-buttons {
+  .demo-buttons,
+  .demo-end a {
     flex-direction: column;
+    width: 100%;
   }
 
-  .demo-buttons a {
+  .demo-buttons a,
+  .demo-end a {
     width: 100%;
-    text-align: center;
   }
 }
 
 @media (max-width: 600px) {
+  .demo-container {
+    padding: 30px 20px;
+  }
+
   h1 {
     font-size: clamp(22px, 5vw, 28px);
   }

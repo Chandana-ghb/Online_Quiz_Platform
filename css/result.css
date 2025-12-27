@@ -1,5 +1,5 @@
 /* ===============================
-   RESET
+   RESET & GLOBAL
 ================================ */
 * {
   margin: 0;
@@ -8,133 +8,144 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* ===============================
-   BACKGROUND - MULTICOLOR ANIMATED
-================================ */
 body {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; /* center horizontally on mobile */
+  align-items: center;     /* center vertically on mobile */
   padding: 20px;
-  background: linear-gradient(270deg, #16C47F, #FFD65A, #FF9D23, #F93827);
-  background-size: 800% 800%;
-  animation: rainbowShift 20s ease infinite;
-  position: relative;
-  overflow: hidden;
+
+  /* Background image */
+  background: url('../assets/result.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-/* Glowing soft layer behind card */
-body::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
-  pointer-events: none;
-  animation: glowShift 12s ease-in-out infinite alternate;
-  z-index: 0;
+/* ===============================
+   LAPTOP / DESKTOP VIEW - LEFT & MIDDLE
+================================ */
+@media (min-width: 1025px) {
+  body {
+    justify-content: flex-start; /* align to left */
+    align-items: center;         /* vertically center */
+    padding-left: 60px;          /* space from left edge */
+  }
+
+  .result-card {
+    max-width: 700px;
+    padding: 50px 40px;
+  }
+
+  .result-card h2 {
+    font-size: 2.2rem;
+  }
+
+  .result-card p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .button-group button {
+    flex: 1 1 45%;
+  }
 }
+
 
 /* ===============================
    RESULT CARD
 ================================ */
 .result-card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 35px;
+  max-width: 300px;
   width: 100%;
-  max-width: 560px;
-  border-radius: 18px;
-  padding: 35px 30px;
   text-align: center;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.25);
-  position: relative;
-  z-index: 1;
-  animation: cardEnter 0.9s ease forwards;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Result heading */
-#resultText {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  animation: slideDown 0.8s ease forwards;
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Score */
-#scoreText {
-  font-size: 17px;
-  color: #1f2937;
-  margin-bottom: 18px;
-  animation: fadeUp 0.9s ease forwards;
-  animation-delay: 0.1s;
+.result-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-/* Feedback */
-#feedbackMessage {
-  background: #f1f5f9;
-  padding: 14px 16px;
-  border-radius: 12px;
-  font-size: 15px;
-  color: #334155;
-  margin-bottom: 28px;
-  animation: fadeUp 0.9s ease forwards;
-  animation-delay: 0.2s;
+.result-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.result-card #scoreText {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.result-card #feedbackMessage {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 /* ===============================
    BUTTONS
 ================================ */
 button {
-  width: 100%;
-  padding: 14px;
-  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
   border: none;
-  font-size: 15px;
-  font-weight: 600;
+  border-radius: 10px;
   cursor: pointer;
-  margin-top: 12px;
-  transition: all 0.25s ease;
-  opacity: 0;
-  animation: buttonPop 0.6s ease forwards;
+  transition: all 0.3s ease;
+  margin: 5px 0;
 }
 
-button:nth-of-type(1) { animation-delay: 0.3s; }
-button:nth-of-type(2) { animation-delay: 0.45s; }
-button:nth-of-type(3) { animation-delay: 0.6s; }
-
-/* Primary - Certificate */
 #certificateBtn {
-  background: linear-gradient(135deg, #16C47F, #FFD65A);
-  color: #ffffff;
+  background-color: #16C47F; /* or change to an image if needed */
+  color: white;
+  font-weight: 500;
+  padding: 10px 20px; /* compact padding */
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: inline-block; /* width adapts to content */
+  transition: all 0.3s ease;
+  margin-bottom: 15px; /* spacing from other elements */
 }
 
 #certificateBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(22,196,127,0.5);
+  background-color: #14a66d;
 }
 
-/* Reattempt */
-button:not(.secondary):not(#certificateBtn) {
-  background: linear-gradient(135deg, #FF9D23, #F93827);
-  color: #ffffff;
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-button:not(.secondary):hover {
-  background: linear-gradient(135deg, #FF7A00, #D9301F);
+.button-group button {
+  flex: 1 1 48%;
 }
 
-/* Secondary */
-button.secondary {
-  background: transparent;
-  color: #16C47F;
-  border: 2px solid #16C47F;
+.button-group .secondary {
+  background-color: #f3f4f6;
+  color: #333;
 }
 
-button.secondary:hover {
-  background: #16C47F;
-  color: #ffffff;
+.button-group .secondary:hover {
+  background-color: #e5e7eb;
 }
 
 /* ===============================
@@ -142,52 +153,70 @@ button.secondary:hover {
 ================================ */
 @media (max-width: 480px) {
   .result-card {
-    padding: 30px 22px;
+    padding: 25px 15px;
   }
 
-  #resultText {
-    font-size: 24px;
+  .result-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .result-card p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-group button {
+    flex: 1 1 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .result-card {
+    max-width: 500px;
+    padding: 35px 25px;
+  }
+
+  .result-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .result-card p {
+    font-size: 1rem;
   }
 }
 
 /* ===============================
-   🎬 KEYFRAMES & ANIMATIONS
+   LAPTOP / DESKTOP VIEW
 ================================ */
+@media (min-width: 1025px) {
+  .result-card {
+    max-width: 700px;
+    padding: 50px 40px;
+  }
 
-/* Card entrance */
-@keyframes cardEnter {
-  from { opacity: 0; transform: scale(0.85) translateY(30px); }
-  to { opacity: 1; transform: scale(1) translateY(0); }
-}
+  .result-card h2 {
+    font-size: 2.2rem;
+  }
 
-/* Slide heading */
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  .result-card p {
+    font-size: 1.2rem;
+  }
 
-/* Fade up */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
 
-/* Button pop */
-@keyframes buttonPop {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-/* Rainbow gradient shift */
-@keyframes rainbowShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Glow behind card */
-@keyframes glowShift {
-  0% { transform: rotate(0deg) translate(0,0); }
-  50% { transform: rotate(30deg) translate(10px, 10px); }
-  100% { transform: rotate(0deg) translate(0,0); }
+  .button-group button {
+    flex: 1 1 45%;
+  }
 }
